@@ -1,0 +1,23 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+variables
+{
+  msTimer tStop;
+}
+
+on start
+{
+  write("시뮬레이션 시작됨 - 10초 후 종료");
+  
+  setTimer(tStop, 10000); // 10초 타이머 설정
+}
+
+on timer tStop
+{
+  write("Will be Stop");
+  //write("타이머 완료 - 시뮬레이션 종료");
+  //stop();
+}

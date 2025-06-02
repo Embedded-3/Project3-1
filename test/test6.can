@@ -1,0 +1,60 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  // 필요시 헤더나 외부 파일 include 가능
+}
+
+
+variables {
+  message msg1 m1;
+  message msg2 m2;
+    int received;       // msg2 수신 여부 플래그
+  msTimer myTimer;  // 밀리초 단위 타이머
+  int timeout;
+}
+
+testcase MainTest() {
+  write("=== MainTest 시작 ===");
+  
+setTimer(myTimer, 10000); // 10초 후 타이머 이벤트 발생
+  
+  // 여기서 직접 메시지 전송
+  m1.bsSwitch = 1;
+  output(m1);
+  write("msg1 sent with bsSwitch = %d", m1.bsSwitch);
+
+
+    TestWaitForMessage(msg2, 10000);
+  
+  
+  if(received){
+    write("msg2 received");
+  }
+  else{
+    write("timeout");
+    testCaseFail();
+
+  }
+/*  
+  m2.sig_motor = 1000;
+  output(m2);
+  write("msg2 sent");
+*/
+  write("=== MainTest 종료 ===");
+}
+
+on message msg2 {
+  m2 = this;  // 수신된 메시지 저장
+  received = 1;  // 수신 플래그 세팅
+
+}
+
+on timer myTimer {
+  write("myTimer 만료!");
+  timeout = 1;
+  
+        write("timeout");
+    testCaseFail();
+
+  // 필요한 작업 수행
+}

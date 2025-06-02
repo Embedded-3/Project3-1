@@ -1,0 +1,25 @@
+﻿/*@!Encoding:65001*/
+
+
+includes
+{
+  // 필요시 외부 CAPL 파일 include
+}
+variables
+{
+  msTimer tStop; // 10초 후 종료 타이머
+}
+
+// 테스트 모듈 시작 시 타이머 시작
+on startTestModule
+{
+  write("테스트 시작됨. 10초 후 종료됩니다.");
+  setTimer(tStop, 10000);
+}
+
+// 타이머가 만료되면 시뮬레이션 종료
+on timer tStop
+{
+  write("타이머 만료됨. 시뮬레이션 종료합니다.");
+  stopMeasurement();
+}

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Panel Type="Vector.CANalyzer.Panels.PanelSerializer, Vector.CANalyzer.Panels.Serializer, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null">
+  <Object Type="Vector.CANalyzer.Panels.Runtime.Panel, Vector.CANalyzer.Panels.Common, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Panel" ControlName="motor">
+    <Object Type="Vector.CANalyzer.Panels.Design.SwitchControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X6f1bce89ea932e44b0eb624e36ace2998687" ControlName="Switch / Indicator 1">
+      <Property Name="Name">X6f1bce89ea932e44b0eb624e36ace2998687</Property>
+      <Property Name="Size">45, 59</Property>
+      <Property Name="Location">509, 310</Property>
+      <Property Name="SymbolConfiguration">8;16;myNamespace;;;switch;1;;;-1;;;Value;;;0</Property>
+      <Property Name="TabIndex">4</Property>
+      <Property Name="Activation">Left</Property>
+      <Property Name="Epsilon">0</Property>
+      <Property Name="Increment">1</Property>
+      <Property Name="StartValue">0</Property>
+      <Property Name="SwitchValuesVTXml">&lt;Version&gt;2&lt;/Version&gt;&lt;Count&gt;2&lt;/Count&gt;&lt;RxValue&gt;0&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;0&lt;/TxValue&gt;&lt;RxValue&gt;1&lt;/RxValue&gt;&lt;LowerUpper&gt;Lower&lt;/LowerUpper&gt;&lt;TxValue&gt;1&lt;/TxValue&gt;</Property>
+      <Property Name="SwitchValuesVT">1;2;0/Lower/0;1/Lower/1</Property>
+      <Property Name="SwitchValues">1;2;0;1</Property>
+      <Property Name="SwitchValuesRx">1;2;0;1</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Xec46e66be4960e4818eb9f6ed0b07529c3d1" ControlName="Static Text 3">
+      <Property Name="Name">Xec46e66be4960e4818eb9f6ed0b07529c3d1</Property>
+      <Property Name="Size">151, 26</Property>
+      <Property Name="Location">573, 42</Property>
+      <Property Name="Font">Consolas, 15pt</Property>
+      <Property Name="Text">PWM DutyCycle</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Xd159c486e3264e4d5cebf5ce8281dd0bc0a5" ControlName="Static Text 2">
+      <Property Name="Name">Xd159c486e3264e4d5cebf5ce8281dd0bc0a5</Property>
+      <Property Name="Size">99, 26</Property>
+      <Property Name="Location">335, 42</Property>
+      <Property Name="Font">Consolas, 15pt</Property>
+      <Property Name="Text">목표 속도</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.TrackBarControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X8220eb63ead5ee47dee9b79e385a7bfa1536" ControlName="Track Bar 2">
+      <Property Name="Name">X8220eb63ead5ee47dee9b79e385a7bfa1536</Property>
+      <Property Name="Size">171, 30</Property>
+      <Property Name="Location">48, 310</Property>
+      <Property Name="TabIndex">3</Property>
+      <Property Name="MaximumDouble">90</Property>
+      <Property Name="MinimumDouble">-90</Property>
+      <Property Name="MaximumSize">100000, 30</Property>
+      <Property Name="Minimum">-90</Property>
+      <Property Name="Maximum">90</Property>
+      <Property Name="SymbolConfiguration"></Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.ClinometerControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X3f763b94ea200e4ad5eaed5e826f1552285e" ControlName="Clinometer 1">
+      <Property Name="Name">X3f763b94ea200e4ad5eaed5e826f1552285e</Property>
+      <Property Name="Size">216, 231</Property>
+      <Property Name="Location">28, 74</Property>
+      <Property Name="SymbolConfiguration"></Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.StaticTextControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="Xddf16e9ded405e4722e97caeca5c6c6284f3" ControlName="Static Text 1">
+      <Property Name="Name">Xddf16e9ded405e4722e97caeca5c6c6284f3</Property>
+      <Property Name="Size">134, 26</Property>
+      <Property Name="Location">67, 42</Property>
+      <Property Name="Font">Consolas, 15pt</Property>
+      <Property Name="Text">경사로(0~90)</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.AnalogGaugeControl, Vector.CANalyzer.Panels.AnalogGauge, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X0d698f86e2d05e4b94ea2bae6afc4dee87b2" ControlName="Analog Gauge 1">
+      <Property Name="Name">X0d698f86e2d05e4b94ea2bae6afc4dee87b2</Property>
+      <Property Name="Size">225, 180</Property>
+      <Property Name="Location">529, 125</Property>
+      <Property Name="ScaleMin">0</Property>
+      <Property Name="ScaleMax">4000</Property>
+      <Property Name="LowerRangeLimit">1300</Property>
+      <Property Name="UpperRangeLimit">2600</Property>
+      <Property Name="ScaleAngle">180</Property>
+      <Property Name="BackgroundColor">Transparent</Property>
+      <Property Name="LegendText"></Property>
+      <Property Name="LegendTextFont">Microsoft Sans Serif, 8.25pt</Property>
+      <Property Name="MainTicksNumber">8</Property>
+      <Property Name="CurrentPosition">0</Property>
+      <Property Name="LengthMainTicks">17</Property>
+      <Property Name="IsFrame">False</Property>
+      <Property Name="IsMargin">False</Property>
+      <Property Name="ScaleMargin">0</Property>
+      <Property Name="SymbolConfiguration">8;16;myNamespace;;;motor;1;;;-1;;;Value;;;0</Property>
+      <Property Name="CriticalProps" Member="AAEAAAD/////AQAAAAAAAAAEAQAAAC9TeXN0ZW0uUmVmbGVjdGlvbi5NZW1iZXJJbmZvU2VyaWFsaXphdGlvbkhvbGRlcgcAAAAETmFtZQxBc3NlbWJseU5hbWUJQ2xhc3NOYW1lCVNpZ25hdHVyZQpTaWduYXR1cmUyCk1lbWJlclR5cGUQR2VuZXJpY0FyZ3VtZW50cwEBAQEBAAMIDVN5c3RlbS5UeXBlW10GAgAAAAUuY3RvcgYDAAAAXFZlY3Rvci5DQU5hbHl6ZXIuUGFuZWxzLkFuYWxvZ0dhdWdlLCBWZXJzaW9uPTE3LjMuOTEuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBgQAAAA2VmVjdG9yLkNBTmFseXplci5QYW5lbHMuRGVzaWduLkdhdWdlQ3JpdGljYWxQcm9wZXJ0aWVzBgUAAAAyVm9pZCAuY3RvcihEb3VibGUsIERvdWJsZSwgRG91YmxlLCBEb3VibGUsIERvdWJsZSkGBgAAAFAuY3RvcihTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlLCBTeXN0ZW0uRG91YmxlKQEAAAAKCw==">
+        <Argument>0</Argument>
+        <Argument>4000</Argument>
+        <Argument>0</Argument>
+        <Argument>1300</Argument>
+        <Argument>2600</Argument>
+      </Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.LCDControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X874225dfe9bc1e4face914eec35eb896da8f" ControlName="LCD Control 1">
+      <Property Name="Name">X874225dfe9bc1e4face914eec35eb896da8f</Property>
+      <Property Name="Size">143, 50</Property>
+      <Property Name="Location">319, 166</Property>
+      <Property Name="ColorOn">Snow</Property>
+      <Property Name="DecimalPlaces">0</Property>
+      <Property Name="NumberIntDigits">4</Property>
+      <Property Name="SymbolConfiguration">8;16;myNamespace;;;slidebar;1;;;-1;;;Value;;;0</Property>
+    </Object>
+    <Object Type="Vector.CANalyzer.Panels.Design.TrackBarControl, Vector.CANalyzer.Panels.CommonControls, Version=18.0.150.0, Culture=neutral, PublicKeyToken=null" Name="X054582ede922fe49cee93f9e29997c1df4c7" ControlName="Track Bar 1">
+      <Property Name="Name">X054582ede922fe49cee93f9e29997c1df4c7</Property>
+      <Property Name="Size">171, 30</Property>
+      <Property Name="Location">298, 310</Property>
+      <Property Name="TabIndex">2</Property>
+      <Property Name="MaximumDouble">4000</Property>
+      <Property Name="MaximumSize">100000, 30</Property>
+      <Property Name="Maximum">4000</Property>
+      <Property Name="SymbolConfiguration">8;16;myNamespace;;;slidebar;1;;;-1;;;Value;;;0</Property>
+    </Object>
+    <Property Name="Name">Panel</Property>
+    <Property Name="Size">809, 527</Property>
+    <Property Name="Location">0, 0</Property>
+    <Property Name="BackColor">LightGray</Property>
+  </Object>
+</Panel>
