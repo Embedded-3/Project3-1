@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'canoe branch'
-                git branch: 'CANoe_Study', url: 'https://github.com/Embedded-3/Project3-1.git'
+                //git branch: 'CANoe_Study', url: 'https://github.com/Embedded-3/Project3-1.git'
             }
         }
 
