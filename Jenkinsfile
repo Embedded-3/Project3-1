@@ -45,16 +45,8 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    def flagFile = '/mnt/trigger_flag.txt'
-                    def flag = sh(script: "cat ${flagFile}", returnStdout: true).trim()
-                    echo "현재 flag 값: ${flag}"
+                    echo '테스트 단계 진행 중...'
 
-                    if (flag == 'no') {
-                        echo "flag가 'no'입니다. 'yes'로 변경합니다."
-                        writeFile file: flagFile, text: 'yes\n' //sh "echo yes > ${flagFile}"
-                    } else {
-                        echo "flag가 'yes'입니다. 변경하지 않습니다."
-                    }
                 }
             }
         }
