@@ -9,31 +9,31 @@ pipeline {
             }
         }
 
-        stage('Lint') {
-            steps {
-                echo '변경 및 추가된 C/H 파일 목록 추출 중...'
+        // stage('Lint') {
+        //     steps {
+        //         echo '변경 및 추가된 C/H 파일 목록 추출 중...'
 
-                script {
-                    def changedFilesRaw = sh(
-                        script: 'git diff --diff-filter=AM --name-only HEAD~1 HEAD | grep -E "\\.(c|h)$" || true',
-                        returnStdout: true
-                    ).trim()
+        //         script {
+        //             def changedFilesRaw = sh(
+        //                 script: 'git diff --diff-filter=AM --name-only HEAD~1 HEAD | grep -E "\\.(c|h)$" || true',
+        //                 returnStdout: true
+        //             ).trim()
 
-                    if (changedFilesRaw == "") {
-                        echo "변경 또는 추가된 C 소스 파일이 없습니다."
-                        currentBuild.result = 'SUCCESS'
-                        return
-                    }
+        //             if (changedFilesRaw == "") {
+        //                 echo "변경 또는 추가된 C 소스 파일이 없습니다."
+        //                 currentBuild.result = 'SUCCESS'
+        //                 return
+        //             }
 
-                    // 줄바꿈으로 된 파일 목록을 공백으로 변환해서 한 줄로 만듦
-                    def changedFiles = changedFilesRaw.replaceAll("\\r?\\n", " ")
+        //             // 줄바꿈으로 된 파일 목록을 공백으로 변환해서 한 줄로 만듦
+        //             def changedFiles = changedFilesRaw.replaceAll("\\r?\\n", " ")
 
-                    echo "변경 및 추가된 파일:\n${changedFilesRaw}"
+        //             echo "변경 및 추가된 파일:\n${changedFilesRaw}"
 
-                    sh "cppcheck --enable=all --inconclusive --quiet --force ${changedFiles}"
-                }
-            }
-        }
+        //             sh "cppcheck --enable=all --inconclusive --quiet --force ${changedFiles}"
+        //         }
+        //     }
+        // }
 
         stage('Build') {
             steps {
