@@ -51,7 +51,7 @@ pipeline {
 
                     if (flag == 'no') {
                         echo "flag가 'no'입니다. 'yes'로 변경합니다."
-                        sh "echo yes > ${flagFile}"
+                        writeFile file: flagFile, text: 'yes\n' //sh "echo yes > ${flagFile}"
                     } else {
                         echo "flag가 'yes'입니다. 변경하지 않습니다."
                     }
