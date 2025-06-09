@@ -1,0 +1,25 @@
+﻿/*@!Encoding:65001*/
+includes
+{
+  
+}
+
+variables
+{
+  
+}
+
+on sysvar sysvar::myNamespace::`switch
+{
+  message msg1 msg;
+  msg.bsSwitch = sysgetvariableint(sysvar::myNamespace::`switch);
+  output(msg);
+}
+
+on sysvar sysvar::myNamespace::slidebar
+{
+  message msg2 msg;
+  msg.sig_motor = sysgetvariableint(sysvar::myNamespace::slidebar);
+  write("motor val : %d", msg.sig_motor);
+  output(msg);
+}
