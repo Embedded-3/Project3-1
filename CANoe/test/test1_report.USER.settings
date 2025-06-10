@@ -80,10 +80,10 @@
 		&lt;/UIElement&gt;
 	&lt;/Content&gt;
 	&lt;DocumentWindows&gt;
-		&lt;DocumentWindow UniqueId="d8fbc27c-4141-4514-9bea-06f8a941b4ba" SerializationId="TestCase&amp;lt;1&amp;gt;" IsOpen="true" LastActiveDateTime="2025-06-10T15:38:10.9065365+09:00" State="Document" Type="Vector.ReportViewer.UI.ContentViews.Controls.ContentViewDocumentWnd, Vector.ReportViewer.UI" /&gt;
+		&lt;DocumentWindow UniqueId="d8fbc27c-4141-4514-9bea-06f8a941b4ba" SerializationId="TestCase&amp;lt;1&amp;gt;" IsOpen="true" LastActiveDateTime="2025-06-10T16:06:09.8301308+09:00" State="Document" Type="Vector.ReportViewer.UI.ContentViews.Controls.ContentViewDocumentWnd, Vector.ReportViewer.UI" /&gt;
 	&lt;/DocumentWindows&gt;
 	&lt;ToolWindows&gt;
-		&lt;ToolWindow UniqueId="513be6bb-578c-4869-ad91-af57dde346b4" Name="mWndExplorer" ContainerDockedSize="350,150" IsOpen="true" LastActiveDateTime="2025-06-10T15:38:10.9116308+09:00" State="Docked" /&gt;
+		&lt;ToolWindow UniqueId="513be6bb-578c-4869-ad91-af57dde346b4" Name="mWndExplorer" ContainerDockedSize="350,150" IsOpen="true" LastActiveDateTime="2025-06-10T16:06:10.1101929+09:00" State="Docked" /&gt;
 		&lt;ToolWindow UniqueId="112c687e-0a7e-4549-9a52-190fdb38c1db" Name="mWndCommentsOverview" ContainerDockedSize="350,150" IsOpen="false" State="Docked" /&gt;
 		&lt;ToolWindow UniqueId="0866481c-2330-4318-94e1-9d96e9dcf6df" Name="mWndReassessmentsOverview" ContainerDockedSize="350,150" IsOpen="false" State="Docked" /&gt;
 	&lt;/ToolWindows&gt;
