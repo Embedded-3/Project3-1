@@ -42,30 +42,23 @@ pipeline {
             }
         }
         
+
+
         stage('Test') {
             steps {
                 script {
-                    echo '테스트 단계 진행 중...'
+                    def flagFile = '/mnt/trigger_flag.txt'
+                    def flag = readFile(flagFile).trim()
+                    echo "현재 flag 값: ${flag}"
 
+                    if (flag == 'no') {
+                        echo "flag가 'no'입니다. 'yes'로 변경합니다."
+                        writeFile file: flagFile, text: 'yes\n'
+                    } else {
+                        echo "flag가 'yes'입니다. 변경하지 않습니다."
+                    }
                 }
             }
         }
-
-        // stage('Test') {
-        //     steps {
-        //         script {
-        //             def flagFile = '/mnt/trigger_flag.txt'
-        //             def flag = readFile(flagFile).trim()
-        //             echo "현재 flag 값: ${flag}"
-
-        //             if (flag == 'no') {
-        //                 echo "flag가 'no'입니다. 'yes'로 변경합니다."
-        //                 writeFile file: flagFile, text: 'yes\n'
-        //             } else {
-        //                 echo "flag가 'yes'입니다. 변경하지 않습니다."
-        //             }
-        //         }
-        //     }
-        // }
     }
 }
