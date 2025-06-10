@@ -1,0 +1,15 @@
+/*@!Encoding:949*/
+includes
+{
+  
+}
+
+variables
+{
+  
+}
+
+testcase MainTest()
+{
+      testCaseFail();
+}

@@ -1,0 +1,17 @@
+/*@!Encoding:949*/
+includes
+{
+  
+}
+
+variables
+{
+  
+}
+
+
+testcase MainTest()
+{
+  write("=== MainTest Ω√¿€ ===");
+  
+}

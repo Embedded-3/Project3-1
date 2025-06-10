@@ -1,0 +1,5 @@
+[NStatePersistence]
+Signature=VectorStatePersistence
+[VTestExecutable]
+TestNode0_LastReportTmpFile=rpt2261.vtestreport
+TestNode1_LastReportTmpFile=rptDB3.vtestreport
